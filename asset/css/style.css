@@ -27,14 +27,12 @@ a {
 
 .btn {
   display: inline-block;
-  min-width: 205px;
-  line-height: 60;
+  width: 205px;
+  line-height: 60px;
   background: #2e80ce;
   color: #fff;
   text-align: center;
   font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.67;
   border-radius: 999px;
 }
 
@@ -528,4 +526,139 @@ a {
   display: flex;
   column-gap: 28px;
   align-items: center;
+}
+/* =================blog===================== */
+.blog {
+  padding: 85px 0;
+  background: #fff;
+}
+
+.blog__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog__content {
+  width: 40%;
+}
+
+.blog__heading {
+  max-width: 470px;
+}
+
+.blog__more {
+  margin-top: 50px;
+  display: flex;
+  color: #10375c;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.55;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+
+.blog__control {
+  margin-top: 28px;
+  justify-content: flex-start;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.blog-item {
+  min-width: 270px;
+  border-radius: 12px;
+  border: 1px solid #e8ebee;
+  background: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.blog-item:hover {
+  box-shadow: 0 18px 50px 0 rgba(0, 0, 0, 0.05);
+  border-color: transparent;
+}
+
+.blog-item:hover .blog-item__thumb {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.blog-item__wrap {
+  height: 172px;
+  overflow: hidden;
+}
+
+.blog-item__thumb {
+  min-width: 270px;
+  height: 172px;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+}
+
+.blog-item__body {
+  padding: 18px 22px;
+}
+
+.blog-item__heading {
+  display: flex;
+  width: 224px;
+  color: #10375c;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.62; /* 162.5% */
+}
+
+.blog-item__desc {
+  margin-top: 10px;
+  width: 266px;
+  color: #575f66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.71; /* 171.429% */
+}
+
+.blog-item__more {
+  margin-top: 12px;
+  display: flex;
+  color: #10375c;
+  font-size: 1.4rem;
+}
+.blog-item__more:hover {
+  color: #2e80ce;
+}
+/* =================appointment===================== */
+
+.appointment {
+  margin: 85px 0;
+}
+
+.appointment__inner {
+  padding: 100px 178px;
+  background: #f6fbff;
+  text-align: center;
+}
+
+.appointment__heading::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 2px;
+  background: #2e80ce;
+  margin: 18px auto 0;
+}
+
+.appointment__desc {
+  margin-top: 18px;
+  max-width: 617px;
+  margin: 18px auto 0;
+}
+
+.appointment__btn {
+  margin-top: 38px;
 }
